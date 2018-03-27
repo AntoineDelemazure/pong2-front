@@ -1,0 +1,4 @@
+﻿﻿
+<!--Affiche un message d'alerte en haut de la page-->
+
+<div *ngIf="message" [ngClass]="{ 'alert': message, 'alert-success': message.type === 'success', 'alert-danger': message.type === 'error' }">{{message.text}}</div>
